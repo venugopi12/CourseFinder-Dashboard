@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseFinder Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="app-header">
+        <div class="header-container">
+
+            <div class="header-left">
+                <span class="logo">coursefinder.ai</span>
+            </div>
+
+            <div class="header-center">
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search by student name, ack no." />
+                </div>
+            </div>
+
+            <div class="header-right">
+
+                <a href="#" class="header-action">
+                    <i class="bi bi-megaphone"></i>
+                    <span>Whats New?</span>
+                </a>
+
+                <div class="header-notification">
+                    <i class="bi bi-bell"></i>
+                    <span class="notif-count">2</span>
+                </div>
+
+                <div class="header-profile">
+                    <img src="images/header.jpg" alt="Profile" />
+                    <span>Dikha Goel</span>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="page-layout">
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar" id="sidebar">
+
+            <!-- COLLAPSE / EXPAND BUTTON -->
+            <button class="sidebar-toggle" aria-label="Collapse sidebar">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <div class="sidebar-inner">
+
+                <nav class="sidebar-nav">
+
+                    <ul class="sidebar-menu">
+
+                        <li class="sidebar-item active">
+                            <i class="bi bi-house"></i>
+                            <span>Dashboard</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <span>Students</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-file-text"></i>
+                            <span>Applications</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-search"></i>
+                            <span>Search Courses</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-wallet2"></i>
+                            <span>Wallet</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-cash"></i>
+                            <span>Commission Payments</span>
+                        </li>
+
+                        <li class="sidebar-item has-arrow">
+                            <i class="bi bi-gear"></i>
+                            <span>Allied Services</span>
+                            <i class="bi bi-chevron-down arrow"></i>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <i class="bi bi-book"></i>
+                            <span>Learning Resources</span>
+                        </li>
+
+                        <li class="sidebar-item has-arrow">
+                            <i class="bi bi-link-45deg"></i>
+                            <span>Quick Links</span>
+                            <i class="bi bi-chevron-down arrow"></i>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="sidebar-footer">
+                    <i class="bi bi-chat-left-text"></i>
+                    <span>Submit feedback</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-wrapper">
+
+            <div class="main-content">
+
+                <!-- ================= GREETING ================= -->
+                <div class="greeting-wrapper">
+                    <p class="greeting-text">
+                        Hey, Good Morning <strong>Diksha!</strong>
+                    </p>
+                </div>
+
+                <!-- ================= FILTERS CARD ================= -->
+                <section class="filters-card">
+
+                    <div class="filters-row">
+                        <div class="filter-field small">
+                            <i class="bi bi-calendar"></i>
+                            <span>Year</span>
+                            <i class="icon chevron"></i>
+                        </div>
+
+                        <div class="filter-field medium">
+                            <i class="bi bi-calendar-date"></i>
+                            <span>Date Created</span>
+                            <i class="icon chevron"></i>
+                        </div>
+
+                        <div class="filter-field medium">
+                            <i class="bi bi-calendar-check"></i>
+                            <span>Select Intake</span>
+                            <i class="icon chevron"></i>
+                        </div>
+                    </div>
+
+                    <div class="filters-row bottom">
+                        <div class="filter-field large">
+                            <i class="bi bi-bank"></i>
+                            <span>Countries</span>
+                            <i class="icon chevron"></i>
+                        </div>
+
+                        <button class="filter-btn">Apply Filter</button>
+                    </div>
+
+                </section>
+
+                <section class="stats-wrapper">
+                    <div class="stats-container">
+
+                        <div class="stat-card blue">
+                            <div class="stat-value">18</div>
+                            <div class="stat-label">Conditional</div>
+                            <div class="stat-cta blue">Offer letter</div>
+                        </div>
+
+                        <div class="stat-card green">
+                            <div class="stat-value">22</div>
+                            <div class="stat-label">Un-Conditional</div>
+                            <div class="stat-cta green">Offer letter</div>
+                        </div>
+
+                        <div class="stat-card yellow">
+                            <div class="stat-value">30</div>
+                            <div class="stat-label">Payment Received</div>
+                            <div class="stat-cta yellow">All Country</div>
+                        </div>
+
+                        <div class="stat-card red">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Payment Received</div>
+                            <div class="stat-cta red">Offer letter</div>
+                        </div>
+
+                        <div class="stat-card gray">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">VISA Received</div>
+                            <div class="stat-cta gray">Offer letter</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ================= APPLICATIONS ================= -->
+                <section class="applications-wrapper">
+
+                    <div class="applications-card">
+
+                        <div class="applications-header">
+                            <h3>Applications</h3>
+                            <i class="bi bi-arrows-angle-expand"></i>
+                        </div>
+
+                        <div class="applications-tabs">
+                            <button class="tab active">Pending On Me (15)</button>
+                            <button class="tab">Lorem Ipsum (12)</button>
+                            <button class="tab">Lorem Ipsum (18)</button>
+                        </div>
+
+                        <div class="applications-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ack. no.</th>
+                                        <th>Student name</th>
+                                        <th>University</th>
+                                        <th>Program</th>
+                                        <th>Pending Since</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="link">11710/22-23</td>
+                                        <td>
+                                            Rishi Joshi<br>
+                                            <span class="sub-text">rishijoshi@gmail.com</span>
+                                        </td>
+                                        <td>Sheffield Hallam...</td>
+                                        <td>Msc Internatio...</td>
+                                        <td>
+                                            <strong>1 Day</strong><br>
+                                            <span class="sub-text">12 Dec 2022</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="link">11710/22-23</td>
+                                        <td>
+                                            Viren Shah<br>
+                                            <span class="sub-text">virensha24@gmail.com</span>
+                                        </td>
+                                        <td>Sheffield Hallam...</td>
+                                        <td>Msc Internatio...</td>
+                                        <td>
+                                            <strong>1 Day</strong><br>
+                                            <span class="sub-text">12 Dec 2022</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="link">11710/22-23</td>
+                                        <td>
+                                            Tushar Joshi<br>
+                                            <span class="sub-text">tushar@gmail.com</span>
+                                        </td>
+                                        <td>Sheffield Hallam...</td>
+                                        <td>Msc Internatio...</td>
+                                        <td>
+                                            <strong>1 Day</strong><br>
+                                            <span class="sub-text">12 Dec 2022</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="link">11710/22-23</td>
+                                        <td>
+                                            Rishi Joshi<br>
+                                            <span class="sub-text">rishijoshi@gmail.com</span>
+                                        </td>
+                                        <td>Sheffield Hallam...</td>
+                                        <td>Msc Internatio...</td>
+                                        <td>
+                                            <strong>1 Day</strong><br>
+                                            <span class="sub-text">12 Dec 2022</span>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination-wrapper">
+                            <button class="page-btn">&lsaquo;</button>
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn">&rsaquo;</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ================= ALLIED SERVICES ================= -->
+                <section class="allied-wrapper">
+                    <div class="allied-card">
+
+                        <div class="allied-content">
+                            <span class="allied-tag">Allied Services</span>
+
+                            <h3 class="allied-title">Overseas Education Loans</h3>
+
+                            <p class="allied-desc">
+                                Provide end to end overseas education loan assistance
+                                to your students to help them achieve their goal
+                            </p>
+
+                            <button class="allied-btn">Get Started</button>
+                        </div>
+
+                        <div class="allied-image">
+
+                            <div class="blue-circle">
+
+                                <div class="white-circle-wrap">
+                                    <div class="white-circle">
+                                        <img src="images/student.png" alt="Student" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <span class="star s1"></span>
+                            <span class="star s2"></span>
+                            <span class="star s3"></span>
+
+                            <span class="float-icon search">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <span class="float-icon book">
+                                <i class="bi bi-book"></i>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="allied-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <aside class="right-wrapper">
+            <!-- ================= RIGHT ACTION BUTTONS ================= -->
+            <div class="right-actions">
+
+                <button class="btn-refresh">Refresh Dashboard</button>
+                <button class="btn-register" id="openRegisterModal" data-type="student">Register Student</button>
+
+            </div>
+            <!-- ================= NEWS BULLETIN ================= -->
+            <div class="news-bulletin">
+                <h4 class="news-title">News Bulletin</h4>
+
+                <div class="news-item">
+                    <div class="news-icon">
+                        <i class="bi bi-newspaper"></i>
+                    </div>
+
+                    <div class="news-content">
+                        <h5>Indian student tops harward!</h5>
+                        <p>
+                            Indian student tops harward university and makes history.
+                            Its the first time for an Indian student to do this.
+                            <a href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- ================= UPCOMING EVENTS ================= -->
+            <div class="events-card">
+
+                <div class="events-header">
+                    <h4>Upcoming Events</h4>
+                    <div class="events-nav">
+                        <button class="nav-btn">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="events-image">
+                    <img src="images/event.png" alt="Event">
+                </div>
+
+                <div class="events-content">
+
+                    <div class="events-title-row">
+                        <h5>Event Name Goes here</h5>
+                        <div class="event-time">
+                            <span>4:30</span>
+                            <small>PM</small>
+                        </div>
+                    </div>
+
+                    <p class="event-date">7 Jan 2023</p>
+
+                    <div class="event-meta">
+                        <div>
+                            <i class="bi bi-bank"></i>
+                            <span>University of New York</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-person"></i>
+                            <span>By Kishori Gupta</span>
+                        </div>
+                    </div>
+
+                    <button class="event-btn" data-type="event">Register Now</button>
+
+                </div>
+
+            </div>
+            <!-- ================= QUICK LINKS ================= -->
+            <div class="quick-links-card">
+
+                <h4 class="quick-links-title">Quick Links</h4>
+
+                <ul class="quick-links-list">
+                    <li>
+                        <a href="https://www.coursefinder.ai/" target="_blank">
+                            <span>Learning Resources</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.coursefinder.ai/" target="_blank">
+                            <span>Learning Resources</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.coursefinder.ai/" target="_blank">
+                            <span>Learning Resources</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.coursefinder.ai/" target="_blank">
+                            <span>Learning Resources</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.coursefinder.ai/" target="_blank">
+                            <span>Learning Resources</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- ================= CONTACT REGIONAL MANAGER ================= -->
+            <section class="crm-card">
+
+                <h3 class="crm-title">Contact Regional Manager</h3>
+
+                <div class="crm-item">
+                    <img src="images/manager.png" class="crm-avatar" alt="Manager" />
+
+                    <div class="crm-info">
+                        <a href="#" class="crm-name">Santosh Sharma</a>
+                        <div class="crm-meta">
+                            <span>+91 9876543210</span>
+                            <span class="divider"></span>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+
+                    <div class="crm-email">sshatmal123@kcoverseas.com</div>
+                </div>
+
+                <div class="crm-item">
+                    <img src="images/manager.png" class="crm-avatar" alt="Manager" />
+
+                    <div class="crm-info">
+                        <a href="#" class="crm-name">Santosh Sharma</a>
+                        <div class="crm-meta">
+                            <span>+91 9876543210</span>
+                            <span class="divider"></span>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+
+                    <div class="crm-email">sshatmal123@kcoverseas.com</div>
+                </div>
+
+                <div class="crm-item">
+                    <img src="images/manager.png" class="crm-avatar" alt="Manager" />
+
+                    <div class="crm-info">
+                        <a href="#" class="crm-name">Santosh Sharma</a>
+                        <div class="crm-meta">
+                            <span>+91 9876543210</span>
+                            <span class="divider"></span>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+
+                    <div class="crm-email">sshatmal123@kcoverseas.com</div>
+                </div>
+
+            </section>
+
+        </aside>
+    </div>
+
+    <!-- REGISTER STUDENT MODAL -->
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal-box">
+
+            <h3 id="modalTitle">Register Student</h3>
+
+            <form id="studentForm" novalidate>
+
+                <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" id="name" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="text" id="mobile" maxlength="10" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-cancel" id="closeModal">
+                        Cancel
+                    </button>
+                    <button type="submit" class="btn-submit">
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="success-message" id="successMessage"></div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
